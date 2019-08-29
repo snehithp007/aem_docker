@@ -9,8 +9,8 @@
  4. Place AEM jar in that folder and Rename the jar to following cq-quickstart-6.3.0.jar. If you would like you use current jar name, Dockerfile and aem_installer.py should be updated with the same.
  5. Place license.properties in the same folder
  6. Run following command to build Docker image: ```docker build -t aem -f Dockerfile```.
- 7. Run following command to check and build if service's Dockerfile or if repository is updated: docker-compose build
- 8. Run following command to start the docker container: docker-compose up
+ 7. Run following command to check and build if service's Dockerfile or if repository is updated: ```docker-compose build```
+ 8. Run following command to start the docker container: ```docker-compose up```
 
 
  Few things to consider:
@@ -20,20 +20,20 @@
 
  Few helpful docker commands:
 
- To get list of docker images: docker images -a
+ To get list of docker images: ```docker images -a```
  -a flag to to get ID of the images
 
  To delete a specific image:
- docker rmi <Image ID>
+ ```docker rmi <Image ID>```
 
  To delete all images:
- docker rmi $(docker images -q)
+ ```docker rmi $(docker images -q)```
 
  To get list of docker containers:
- docker container ls -a
+ ```docker container ls -a```
 
  To remove container
- docker container rm <Container ID>
+ ```docker container rm <Container ID>```
 
  To remove all stopped containers
- docker container prune
+ ```docker container prune```
