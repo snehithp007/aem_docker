@@ -8,7 +8,7 @@
  3. Unzip the repository and goto that folder
  4. Place AEM jar in that folder and Rename the jar to following cq-quickstart-6.3.0.jar. If you would like you use current jar name, Dockerfile and aem_installer.py should be updated with the same.
  5. Place license.properties in the same folder
- 6. Run following command to build Docker image: docker build -t aem -f Dockerfile .
+ 6. Run following command to build Docker image: ```docker build -t aem -f Dockerfile```.
  7. Run following command to check and build if service's Dockerfile or if repository is updated: docker-compose build
  8. Run following command to start the docker container: docker-compose up
 
