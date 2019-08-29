@@ -1,0 +1,16 @@
+version: '3'
+services:
+  aem:
+    container_name: aem
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    hostname: 'aem'
+    ports:
+      - '4502:4502'
+      - '30303:30303'
+    volumes:
+      - ./aem_logs/aem:/opt/aem/crx-quickstart/logs
+      - aem_repo:/opt/aem/crx-quickstart/repository
+volumes: 
+  aem_repo:
